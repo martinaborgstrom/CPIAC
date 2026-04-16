@@ -1,0 +1,11 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalNetworkPolicy
+metadata:
+  name: allow-internal
+spec:
+  selector: role == 'server'
+  ingress:
+    - action: Allow
+      source:
+        nets:
+          - 10.0.0.0/16

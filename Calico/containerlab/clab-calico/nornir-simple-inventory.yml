@@ -1,0 +1,31 @@
+---
+k01-control-plane:
+    username: 
+    password: 
+    platform: ext-container
+    hostname: 172.18.0.2
+k01-worker:
+    username: 
+    password: 
+    platform: ext-container
+    hostname: 172.18.0.4
+k01-worker2:
+    username: 
+    password: 
+    platform: ext-container
+    hostname: 172.18.0.3
+k01:
+    username: 
+    password: 
+    platform: k8s-kind
+    hostname: 172.18.0.4
+host-external:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-client2
+  namespace: no-default
+  labels:
+    app: calico-vxlan
+    role: client
+spec:
+  nodeName: k01-worker2
+  containers:
+  - name: busy
+    image: busybox:latest
+    command: ["sleep", "3600"]

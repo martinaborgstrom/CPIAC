@@ -1,0 +1,15 @@
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: allow-client-to-server
+  namespace: default
+spec:
+  selector: role == 'server'
+  ingress:
+    - action: Allow
+      protocol: TCP
+      source:
+        selector: role == 'client'
+      destination:
+        ports: [80]
+  

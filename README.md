@@ -1,13 +1,10 @@
 # CPIAC
-Per seguente progetto sono state valutate le somiglianze e le differenze nell'utilizzo di plugin CNI per una tologia di rete che utilizza Kubernetes e Containerlab.
+Per seguente progetto sono state valutate le similitudini e le differenze nell'utilizzo di plugin CNI (Calico e Cilium) per una tologia di rete che utilizza Kubernetes e Containerlab.
 
 La topologia di rete utilizza:
 - un cluster Kubernetes contentente un control-plane e due nodi worker (ciascuno dotato di rispettivi pods)
 - un host esterno al cluster
 - un router che collega i componenti
-
-### CNI Plugin
-Per la comunicazione tra le due reti sono stati usati dei plugin CNI: Calico e Cilium. Valutando similitudini e differenze.
 
 ### How to start
 Per studiare la topologia è necessario utilizzare:
@@ -51,5 +48,5 @@ sudo tar xzvfC cilium-linux-${CLI_ARCH}.tar.gz /usr/local/bin
 rm cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
 ```
 
-Credits:
-Per tale progetto, si è partiti dal seguente studio: ```https://virtualizestuff.com/exploring-containerlab```
+### Credits
+Per tale progetto, si è partiti dal seguente studio: [https://virtualizestuff.com/exploring-containerlab](https://virtualizestuff.com/exploring-containerlab)
